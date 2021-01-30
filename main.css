@@ -1,0 +1,112 @@
+--color-text: #e1eef6;
+--color-link: #ff5f2e;
+--color-link-hover: #fcbe32;
+--black: #111111;
+
+
+/*  Centers the image of the CRT */ 
+/* Parent */
+.tvborder
+{
+    width: 900px;
+    height: 918px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: auto;
+    background: url("crt-frameiii.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Affects the Image inside of the CRT Screen */
+.tvscreen
+{
+    margin: 65px auto;
+    border: 2px solid orange; 
+   /* Centered Black Background to simulate screen being off. */ 
+    width: 740px;
+    height: 600px;
+    background-color: black;
+    /* Recesses Element behind other Elements */
+    z-index: -1;
+}
+
+/* When Interacting with the Power Button, turns screen on */ 
+.powerbutton
+{
+    border: 2px solid green;
+    width: 50px;
+    height: 37px;
+    /* Position of Button */ 
+    margin-left: 91%;
+    margin-right: 9%;
+    margin-top: 64px;
+    position: absolute;
+}
+
+.container
+{
+    position: relative;
+    border: 2px solid blue;
+    width: 100%;
+    height: 200px;
+
+}
+
+/* TESTING BEGINS */ 
+body 
+{
+    font-family: sans-serif;
+    background-color: $black;
+  }
+  
+  a 
+  {
+    color: $color-link;
+    
+    &:hover 
+    {
+      color: $color-link-hover;
+    }
+  }
+  
+  button 
+  {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  h1 
+  {
+    text-align: center;
+  }
+  
+  .screen 
+  {
+    background-color: $color-text;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    content: " ";
+    overflow: hidden;
+    
+      // Fallback for old browsers
+    background: #16222A;
+  
+    background: -webkit-linear-gradient(to left, #16222A , #3A6073);
+    background: linear-gradient(to left, #16222A , #3A6073);
+    
+    background-size: cover;
+    
+    background-image: url(https://cldup.com/gn3s3Fg75t.gif);
+    
+     color: $color-text;
+  }
+  /* TESTING ENDS */
