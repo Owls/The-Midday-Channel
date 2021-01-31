@@ -5,7 +5,8 @@ var isTurnedOn = false;
 
 var timeline;
 
-function buildTimeline() {
+function buildTimeline() 
+{
     timeline = new TimelineMax({
         paused: true
     });
@@ -24,7 +25,8 @@ function buildTimeline() {
         });
 }
 
-function toggleSwitcherTV() {
+function toggleSwitcherTV() 
+{
     if (isTurnedOn) {
         timeline.restart();
     }

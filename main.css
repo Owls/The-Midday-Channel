@@ -9,7 +9,8 @@
 
 /* Parent */
 
-.tvborder {
+.tvborder 
+{
   width: 900px;
   height: 918px;
   border: 2px solid black;
@@ -23,7 +24,8 @@
 
 /* Affects the Image inside of the CRT Screen */
 
-.tvscreen {
+.tvscreen 
+{
   margin: 65px auto;
   border: 2px solid orange;
   /* Centered Black Background to simulate screen being off. */
@@ -32,7 +34,8 @@
   /* Recesses Element behind other Elements */
 }
 
-.content {
+.content 
+{
   border: 2px solid green;
   /* Centered Black Background to simulate screen being off. */
   max-width: 740px;
@@ -52,7 +55,8 @@
 
 /* When Interacting with the Power Button, turns screen on */
 
-.powerbutton {
+.powerbutton 
+{
   border: 2px solid green;
   width: 50px;
   height: 37px;
@@ -63,7 +67,8 @@
   position: absolute;
 }
 
-.container {
+.container 
+{
   position: relative;
   border: 2px solid blue;
   width: 100%;
