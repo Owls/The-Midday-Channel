@@ -1,14 +1,13 @@
 var SELECTOR_SCREEN_ELEMENT = '.content';
 var SELECTOR_SWITCHER_TV = '.powerbutton';
 
-var isTurnedOn = false;
+var isTurnedOn = true;
 
 var timeline;
 
-function buildTimeline() 
-{
+function buildTimeline() {
     timeline = new TimelineMax({
-        paused: false
+        paused: true
     });
 
     timeline
@@ -25,8 +24,7 @@ function buildTimeline()
         });
 }
 
-function toggleSwitcherTV() 
-{
+function toggleSwitcherTV() {
     if (isTurnedOn) {
         timeline.restart();
     }
@@ -45,26 +43,3 @@ $(document).ready(buildTimeline);
 $(document).on('click', SELECTOR_SWITCHER_TV, function() {
     toggleSwitcherTV();
 });
-
-// Adds Sound to pressing Power Button 
-const powerbutton = document.querySelector(".powerbutton");
-
-//TV is OFF by Default
-let tvon = true;
-const gamesound = new Audio("./bkpause.mp3");
-gamesound.loop = true
-const poweron = new Audio("./turnon.mp3"); 
-gamesound.volume = (0.3);
-
-powerbutton.addEventListener("click", () => 
-{
- poweron.play();
- if(tvon)
- {
-   tvon = false;
-   gamesound.pause();
- }else 
- {
-  gamesound.play();
- }
-})
