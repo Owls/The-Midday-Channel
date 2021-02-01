@@ -10,9 +10,8 @@ const gamesound = new Audio("./bkpause.mp3");
 gamesound.loop = true
 gamesound.volume = 0.3;
 const poweron = new Audio("./turnon.mp3");
-poweron.volume = 0.3;
  
-function BuildTimeline() {
+function buildTimeline() {
     timeline = new TimelineMax({
         paused: false
     });
@@ -38,17 +37,14 @@ function ToggleTV() {
     } else {
         timeline.reverse();
         poweron.play();
-        // delay the game sound from playing by 1200ms (1.2s)
-        setTimeout(function() {
-            gamesound.play();
-        }, 1200);
+        gamesound.play();
     }
  
     isTurnedOn = !isTurnedOn;
 }
  
 // Initialize
-$(document).ready(BuildTimeline);
+$(document).ready(buildTimeline);
  
 // Bindings
 $(document).on('click', SELECTOR_SWITCHER_TV_PWR, function() {

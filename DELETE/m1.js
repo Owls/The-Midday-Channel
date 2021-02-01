@@ -2,17 +2,18 @@ var SELECTOR_SCREEN_ELEMENT = '.content';
 var SELECTOR_SWITCHER_TV_PWR = '.powerbutton';
 var SELECTOR_SWITCHER_TV_VOL_UP = ".volumeupbutton";
 var SELECTOR_SWITCHER_TV_VOL_DOWN = ".volumedownbutton";
+var VOLUME_LEVELS = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0];
  
 var isTurnedOn = false;
  
 var timeline;
+var level = 4; // 0.3
 const gamesound = new Audio("./bkpause.mp3");
 gamesound.loop = true
 gamesound.volume = 0.3;
 const poweron = new Audio("./turnon.mp3");
-poweron.volume = 0.3;
  
-function BuildTimeline() {
+function buildTimeline() {
     timeline = new TimelineMax({
         paused: false
     });
@@ -38,33 +39,28 @@ function ToggleTV() {
     } else {
         timeline.reverse();
         poweron.play();
-        // delay the game sound from playing by 1200ms (1.2s)
-        setTimeout(function() {
-            gamesound.play();
-        }, 1200);
+        gamesound.play();
     }
  
     isTurnedOn = !isTurnedOn;
 }
  
 // Initialize
-$(document).ready(BuildTimeline);
+$(document).ready(buildTimeline);
  
 // Bindings
 $(document).on('click', SELECTOR_SWITCHER_TV_PWR, function() {
     ToggleTV();
 });
 $(document).on("click", SELECTOR_SWITCHER_TV_VOL_UP, function() {
-    // round to first decimal place, javascript is really weird...
-    gamesound.volume = Math.round(gamesound.volume * 10) / 10;
-    if(gamesound.volume < 1.0) {
-        gamesound.volume += 0.1;
+    if(level >= 0 && level < 10) {
+        level += 1;
+        gamesound.volume = VOLUME_LEVELS[level];
     }
 });
 $(document).on("click", SELECTOR_SWITCHER_TV_VOL_DOWN, function() {
-    // round to first decimal place, javascript is really weird...
-    gamesound.volume = Math.round(gamesound.volume * 10) / 10;
-    if(gamesound.volume > 0) {
-        gamesound.volume -= 0.1;
+    if(level > 0 && level <= 10) {
+        level -= 1;
+        gamesound.volume = VOLUME_LEVELS[level];
     }
 });
