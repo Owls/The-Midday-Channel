@@ -5,9 +5,11 @@ body
     background-color: #FFC300;
 }
 
+/* Div for Layout Testing */
 .bodytester
 {
     border: 2px solid purple;
+    width: 50%;
 }
 /* Container for Text Bubble */
 /* Centerpiece of Header */
@@ -30,7 +32,7 @@ body
     background: url("./jiggy.gif");
     background-size: 96%;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 2;
 } 
 
 .bg-img
@@ -43,7 +45,7 @@ body
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    
 
     /* Position our Navbar */
     position: relative;
@@ -85,7 +87,7 @@ li a
     text-decoration: none;
 }
 
-/* Applies the Rule of "Hover" to the Element */
+/* Applies the Attribute of "Hover" to the Element */
 li a:hover
 {
     background-color: #FC2E31;
@@ -95,6 +97,7 @@ li a:hover
 {
     background-color: #FC2E31;
 }
+
 p
 {
     color: black;
@@ -112,7 +115,7 @@ p
     text-align: center;
 }
 
-/* CRT FLICKER TESTING*/
+/* Using the Keyframes rule, we can specify what happens on each Frame of an Animation */
 @keyframes flicker {
     0% {
       opacity: 0.27861;
@@ -178,6 +181,8 @@ p
       opacity: 0.24387;
     }
   }
+
+  /* Uses the Keyframe Rule to achieve Color Seperation */
   @keyframes textShadow {
     0% {
       text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
@@ -256,9 +261,13 @@ p
     opacity: 0;
     z-index: 2;
     pointer-events: none;
+    /* Setting to 0 is, ostensibly, turning the Flicker to off */
     animation: flicker 0 infinite;
   }
-  .crt::before {
+
+  /* Uses Liner Gradients and Background Size to Simulate Flicker */
+  .crt::before 
+  {
     content: " ";
     display: block;
     position: absolute;

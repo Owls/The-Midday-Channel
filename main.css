@@ -69,6 +69,7 @@
   position: absolute;
 }
 
+/* When Interacting with the Volume Buttons, incramentally changes Volume */
 .volumeupbutton
 {
   border: 2px solid #ec0cd1;
@@ -81,6 +82,7 @@
   position: absolute;
 }
 
+/* When Interacting with the Volume Buttons, incramentally changes Volume */
 .volumedownbutton
 {
   border: 2px solid #fbff00;
@@ -125,8 +127,6 @@ button {
 h1 {
   text-align: center;
 }
-
-/* CRT FLICKER TESTING */
 
 /* Using the Keyframes rule, we can specify what happens on each Frame of an Animation */
 @keyframes flicker 
@@ -289,7 +289,7 @@ h1 {
   bottom: 0;
   right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: -3-;
+  z-index: -3;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
