@@ -6,7 +6,7 @@ var isTurnedOn = false;
 var timeline;
 const gamesound = new Audio("./bkpause.mp3");
 gamesound.loop = true
-gamesound.volue = 0.3;
+gamesound.volume = 0.3;
 const poweron = new Audio("./turnon.mp3");
  
 function buildTimeline() {
