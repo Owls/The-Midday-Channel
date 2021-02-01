@@ -1,4 +1,4 @@
-/* AFFECTS BKMAIN HTML */
+/* Affects BKMAIN HTML */
 
 body
 {
@@ -64,7 +64,7 @@ ul
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0C6FA0;
+    background-color: #0943C2;
     position: -webkit-sticky; /* Safari Support */
     position: sticky;
     top: 0;
@@ -88,12 +88,12 @@ li a
 /* Applies the Rule of "Hover" to the Element */
 li a:hover
 {
-    background-color: #C70039;
+    background-color: #FC2E31;
 }
 
 .active
 {
-    background-color: #C70039;
+    background-color: #FC2E31;
 }
 p
 {
@@ -107,7 +107,7 @@ p
     bottom: 0;
     width: 100%;
     height:15px;
-    background-color: #C70039;
+    background-color: #FC2E31;
     color: white;
     text-align: center;
 }
