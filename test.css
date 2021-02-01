@@ -1,0 +1,113 @@
+/* AFFECTS BKMAIN HTML */
+
+body
+{
+    background-color: #FFC300;
+}
+
+.bodytester
+{
+    border: 2px solid purple;
+}
+/* Container for Text Bubble */
+/* Centerpiece of Header */
+
+.jiggy
+{
+    border: 5px dotted black;
+    border-radius: 50%;
+    border-top-color: #196F3D;
+    border-bottom-color: #C70039;
+    border-left-color: #F1C40F;
+    border-right-color: #1A5276;
+    margin: auto;
+    height: 141px;
+    width: 141px;
+    /* Allows Positioning of the Jiggy */
+    position: relative;
+    left: center;
+    top: 338px;
+    background: url("./jiggy.gif");
+    background-size: 96%;
+    background-repeat: no-repeat;
+    z-index: -1;
+} 
+
+.bg-img
+{
+    /* Define Image */
+    border: 2px solid green;
+    background-image: url("./title.png");
+    min-height: 400px;
+    /* Center and Scale the Image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    /* Position our Navbar */
+    position: relative;
+}
+
+/* Position Navbar in a Container */
+.container
+{
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* Nav Bar */ 
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0C6FA0;
+    position: -webkit-sticky; /* Safari Support */
+    position: sticky;
+    top: 0;
+}
+
+li
+{
+    float: left;
+}
+
+/* Affects Anchors inside of Lists */
+li a 
+{
+    display: block;
+    color: #FFC300;
+    text-align: center; 
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Applies the Rule of "Hover" to the Element */
+li a:hover
+{
+    background-color: #C70039;
+}
+
+.active
+{
+    background-color: #C70039;
+}
+p
+{
+    color: black;
+}
+
+.footer
+{ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:15px;
+    background-color: #C70039;
+    color: white;
+    text-align: center;
+}
