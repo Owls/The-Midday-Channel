@@ -6,11 +6,13 @@ var SELECTOR_SWITCHER_TV_VOL_DOWN = ".volumedownbutton";
 var isTurnedOn = false;
  
 var timeline;
+
 const gamesound = new Audio("./bkpause.mp3");
 gamesound.loop = true
-gamesound.volume = 0.3;
-const poweron = new Audio("./turnon.mp3");
-poweron.volume = 0.3;
+gamesound.volume = 0.0;
+
+const poweronsound = new Audio("./turnon.mp3");
+poweronsound.volume = 0.3;
  
 function BuildTimeline() {
     timeline = new TimelineMax({
@@ -35,12 +37,17 @@ function ToggleTV() {
     if (isTurnedOn) {
         timeline.restart();
         gamesound.pause();
+        // reset the sound to the beginning
+        gamesound.currentTime = 0;
+        gamesound.volume = 0;
     } else {
         timeline.reverse();
-        poweron.play();
+        poweronsound.play();
         // delay the game sound from playing by 1200ms (1.2s)
         setTimeout(function() {
             gamesound.play();
+            // animate the sound from volume 0 to 0.3 over 3000ms (3s)
+            $(gamesound).animate({volume: 0.3}, 3000);
         }, 1200);
     }
  
