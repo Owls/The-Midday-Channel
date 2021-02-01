@@ -8,7 +8,7 @@ var timeline;
 function buildTimeline() 
 {
     timeline = new TimelineMax({
-        paused: true
+        paused: false
     });
 
     timeline
