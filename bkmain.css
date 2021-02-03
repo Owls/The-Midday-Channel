@@ -5,6 +5,34 @@ body
     background-color: #FFC300;
 }
 
+ul
+{
+  width: 2000px;
+}
+
+div
+{
+  font-family: 'IBM Plex Serif', serif;
+}
+
+
+/* Div for Dialouge Box */
+.box
+{
+    position: absolute;
+    height: 100px;
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 0%;
+    margin-right: 10%;
+    border-radius: 25px;
+    background-color: #C70039;
+}
+    .right
+{
+    float: right;
+}
+
 /* Div for Layout Testing */
 .bodytester
 {
@@ -55,7 +83,8 @@ body
 .container
 {
     position: absolute;
-    margin: 20px;
+    margin: -2px;
+    margin-top: 355px;
     width: auto;
 }
 

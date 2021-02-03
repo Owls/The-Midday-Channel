@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You For Your Hard Work!</title>
-    <link rel="stylesheet" href="credits.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Thank You For Your Hard Work!</title>
+     <link rel="stylesheet" href="credits.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link rel="preconnect" href="https://fonts.gstatic.com"> 
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+     </head>
 
-<body>
-    <audio autoplay>
-        <source src="credits.mp3" type="audio/mp3">
-        Your Browser does not Support this Audio Element*!*
-    </audio>
+          <body>
+          <audio autoplay>
+          <source src="credits.mp3" type="audio/mp3">
+          Your Browser does not Support this Audio Element*!*
+          </audio>
 
-    <div class="body">
+          <div class="body">
 
-        <h1 class="animate__animated animate__fadeInUp">TEST</h1>
+          <h1 class="animate__animated animate__fadeInUp">TEST</h1>
 
-        <p>There is a tremendous amount of work left to be done, but I'd like to thank those who have given their time an effort.</p>
+          <p>There is a tremendous amount of work left to be done, but I'd like to thank those who have given their time and effort.</p>
 
-        <br>
-        <br>
-        
-        <p>
-            The Retro Guide Project Staff
-       <br>
-            ------------------------------------
-       <br>
-    
-            Director
-       <br>
-            ----------
-       <br>
-            Hunter Covington
-      <br>
-      <br>
-            Programming
-       <br>
-            ----------------
-       <br>
-            Matthew "JD" B.
-       <br>
-            John F.
-       <br>
-            Nick B.
-       <br>
-            Kevin Fair
-       <br>
-    
-       <br>
-       <br>
-            Art & Design 
-       <br>
-            -----------------
-       <br>
-            Art (That's his Username)
-       <br>
-       <br>
-    
-            Writing & Consultation
-       <br>
-            ----------------------------
-       <br>
-            Grant
-       <br>
-       <br>
-    
-            Special Thanks!!
-       <br>
-            ------------------
-       <br>
-            Zelk - Testing
-    
-            </p>
-    </div>
+          <br>
+          <br>
 
-    <script>
-        let started = false;
-        const body = document.querySelector("body")
-        body.addEventListener("click", () => {
-            if (!started){
-                const endcredits = new Audio("./credits.mp3");
-                endcredits.loop = true;
-                endcredits.play();
-                started = true;
-            }
-        })
-    </script>
-</body>
-</html>
+          <p>
+          The Retro Guide Project Staff
+          <br>
+          ------------------------------------
+          <br>
+          ------------------------------------
+          <br>
+          <br>
+
+          Director
+          <br>
+          ----------
+          <br>
+          Hunter C.
+          <br>
+          Programming
+          <br>
+          ----------------
+          <br>
+          Matthew "JD" B.
+          <br>
+          John F.
+          <br>
+          Nick B.
+          <br>
+          Kevin Fair
+          <br>
+
+          <br>
+          <br>
+          Art & Design 
+          <br>
+          -----------------
+          <br>
+          Art (That's his Username)
+          <br>
+          <br>
+
+          Writing & Consultation
+          <br>
+          ----------------------------
+          <br>
+          Grant
+          <br>
+          <br>
+
+          Special Thanks!!
+          <br>
+          ------------------
+          <br>
+          Zelk - Testing
+          <br>
+          Eric H. - Testing / Consultation
+
+          </p>
+          </div>
+
+          <script>
+          let started = false;
+          const body = document.querySelector("body")
+          body.addEventListener("click", () => {
+          if (!started){
+               const endcredits = new Audio("./credits.mp3");
+               endcredits.loop = true;
+               endcredits.play();
+               started = true;
+          }
+          })
+          </script>
+          </body>
+          </html>
