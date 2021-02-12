@@ -20,7 +20,7 @@ body
     margin: 0;
     height: 100vh;
     background-color: black;
-    background-image: url(skyboxtest.jpg);
+    background-image: url(dxskybox.png); /* replace this later, dummy */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
