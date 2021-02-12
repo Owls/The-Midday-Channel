@@ -1,0 +1,93 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animate__animated .animate__jackInTheBox
+{
+    animation-delay: 3s;
+    animation-duration: 5s;
+}
+
+h1
+{
+    font-family: 'Yusei Magic', sans-serif;
+    color: #338DFF;
+    text-align: center;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    background-image: url(skyboxtest.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Define the Size of Box with Height and Width */
+/* Gave Box a background Image and centered content within the Box, filled image to box */
+.box
+{
+    border: 2px solid firebrick;
+    height: 10vh;
+    width: 10vw;
+    background-image: url("original.png");
+    background-position: center center;
+    background-size: cover;
+    /* Provide a name for animation, delay start of animation, specify duration of the animation, and how many times it repeats */
+    animation-name: stupidity;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    /* Makes smood */
+    transition: 0.2s ease;
+}
+
+@keyframes stupidity
+{
+    0%
+    {   /* Start - Format is X , Y */
+        transform: translate(0, 0) rotate(0deg);
+        background-color: steelblue;
+    }
+
+    25%
+    { /* Moves to Top Right Corner */
+       transform: translate(90vw, 0) rotate(100deg);
+       background-color: mediumspringgreen;
+    }
+
+    50%
+    {   /* Moves to Bottom Right Corner */
+        transform: translate(90vw, 90vh) rotate(175deg);
+        background-color: #F1C40F;
+    }
+
+    75%
+    {   /* Moves to Bottom Left Corner */
+        transform: translate(0, 90vh) rotate(200deg);
+        background-color: indianred;
+    }
+
+    100%
+    {   /* Back to Start */
+        transform: translate(0, 0) rotate(0deg);
+        background-color: lightsalmon;
+    }
+}
+
+.centered
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+

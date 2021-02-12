@@ -1,8 +1,13 @@
-/* --color-text: #e1eef6;
---color-link: #ff5f2e;
---color-link-hover: #fcbe32;
---black: #111111; */
-
+/*
+                     _     _                   _          _
+__      _____  _   _| | __| |_   _  ___  _   _| |__   ___| |_ __   _ __ ___   ___
+\ \ /\ / / _ \| | | | |/ _` | | | |/ _ \| | | | '_ \ / _ \ | '_ \ | '_ ` _ \ / _ \
+ \ V  V / (_) | |_| | | (_| | |_| | (_) | |_| | | | |  __/ | |_) || | | | | |  __/
+  \_/\_/ \___/ \__,_|_|\__,_|\__, |\___/ \__,_|_| |_|\___|_| .__(_)_| |_| |_|\___|
+                             |___/                         |_|
+  -----------------------------------------------------------------
+  Studios 
+*/
 
 /*  Centers the image of the CRT */
 
@@ -103,7 +108,6 @@
   height: 200px;
 }
 
-
 /* TESTING BEGINS */
 
 body {
@@ -196,7 +200,7 @@ h1 {
   }
 }
 
-/* Uses the Keyframe Rule to achieve Color Seperation */
+/* Uses the Keyframe Rule to achieve Color Separation */
 @keyframes textShadow 
 {
   0% {
@@ -263,7 +267,9 @@ h1 {
     text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
   }
 }
-.crt::after {
+
+.crt::after 
+{
   content: " ";
   display: block;
   position: absolute;
