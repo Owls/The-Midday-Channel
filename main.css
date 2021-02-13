@@ -1,12 +1,5 @@
 /*
                      _     _                   _          _
-__      _____  _   _| | __| |_   _  ___  _   _| |__   ___| |_ __   _ __ ___   ___
-\ \ /\ / / _ \| | | | |/ _` | | | |/ _ \| | | | '_ \ / _ \ | '_ \ | '_ ` _ \ / _ \
- \ V  V / (_) | |_| | | (_| | |_| | (_) | |_| | | | |  __/ | |_) || | | | | |  __/
-  \_/\_/ \___/ \__,_|_|\__,_|\__, |\___/ \__,_|_| |_|\___|_| .__(_)_| |_| |_|\___|
-                             |___/                         |_|
-  -----------------------------------------------------------------
-  Studios 
 */
 
 /*  Centers the image of the CRT */
@@ -14,14 +7,14 @@ __      _____  _   _| | __| |_   _  ___  _   _| |__   ___| |_ __   _ __ ___   __
 
 /* Parent */
 
-.tvborder 
+.tvborder
 {
   width: 900px;
   height: 918px;
   border: 2px solid black;
   padding: 25px;
   margin: auto;
-  background: url("crt-frameiii.png");
+  background: url("ASSETS/crt-frameiii.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -29,7 +22,7 @@ __      _____  _   _| | __| |_   _  ___  _   _| |__   ___| |_ __   _ __ ___   __
 
 /* Affects the Image inside of the CRT Screen */
 
-.tvscreen 
+.tvscreen
 {
   margin: 65px auto;
   border: 2px solid orange;
@@ -37,15 +30,16 @@ __      _____  _   _| | __| |_   _  ___  _   _| |__   ___| |_ __   _ __ ___   __
   width: 740px;
   height: 600px;
   /* Recesses Element behind other Elements */
+  z-index: 2;
 }
 
-.content 
+.content
 {
   border: 2px solid green;
   /* Centered Black Background to simulate screen being off. */
   max-width: 740px;
   height: 600px;
-  z-index: -1;
+  z-index: 1;
   content: " ";
   overflow: hidden;
   /* Fallback for old browsers */
@@ -53,16 +47,18 @@ __      _____  _   _| | __| |_   _  ___  _   _| |__   ___| |_ __   _ __ ___   __
   background: -webkit-linear-gradient(to left, #16222A, #3A6073);
   background: linear-gradient(to left, #16222A, #3A6073);
   background-size: cover;
-  background-image: url(https://cldup.com/gn3s3Fg75t.gif);
+  background-image: url("./ASSETS/dxskybox.png");
   color: #e1eef6;
   height: 100%;
   width: 100%;
+  /* Adds blur to screen */
+  filter: blur(1.5px);
 }
 
 
 /* When Interacting with the Power Button, turns screen on */
 
-.powerbutton 
+.powerbutton
 {
   border: 2px solid green;
   width: 50px;
@@ -100,7 +96,7 @@ __      _____  _   _| | __| |_   _  ___  _   _| |__   ___| |_ __   _ __ ___   __
   position: absolute;
 }
 
-.container 
+.container
 {
   position: relative;
   border: 2px solid blue;
@@ -133,7 +129,7 @@ h1 {
 }
 
 /* Using the Keyframes rule, we can specify what happens on each Frame of an Animation */
-@keyframes flicker 
+@keyframes flicker
 {
   0% {
     opacity: 0.27861;
@@ -201,7 +197,7 @@ h1 {
 }
 
 /* Uses the Keyframe Rule to achieve Color Separation */
-@keyframes textShadow 
+@keyframes textShadow
 {
   0% {
     text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
@@ -268,7 +264,7 @@ h1 {
   }
 }
 
-.crt::after 
+.crt::after
 {
   content: " ";
   display: block;
@@ -285,7 +281,7 @@ h1 {
 }
 
 /* Uses Liner Gradients and Background Size to Simulate Flicker */
-.crt::before 
+.crt::before
 {
   content: " ";
   display: block;
@@ -296,7 +292,7 @@ h1 {
   right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: -3;
-  background-size: 100% 2px, 3px 100%;
+  background-size: auto;
   pointer-events: none;
 }
 .crt {

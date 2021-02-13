@@ -2,23 +2,23 @@ var SELECTOR_SCREEN_ELEMENT = '.content';
 var SELECTOR_SWITCHER_TV_PWR = '.powerbutton';
 var SELECTOR_SWITCHER_TV_VOL_UP = ".volumeupbutton";
 var SELECTOR_SWITCHER_TV_VOL_DOWN = ".volumedownbutton";
- 
+
 var isTurnedOn = false;
- 
+
 var timeline;
 
-const gamesound = new Audio("./bkpause.mp3");
-gamesound.loop = true
+const gamesound = new Audio("./ASSETS/sscreenII.mp3");
+gamesound.loop = false
 gamesound.volume = 0.0;
 
-const poweronsound = new Audio("./turnon.mp3");
+const poweronsound = new Audio("./ASSETS/turnon.mp3");
 poweronsound.volume = 0.3;
- 
+
 function BuildTimeline() {
     timeline = new TimelineMax({
         paused: false
     });
- 
+
     timeline
         .to(SELECTOR_SCREEN_ELEMENT, .2, {
             width: '100vw',
@@ -32,7 +32,7 @@ function BuildTimeline() {
             background: '#ffffff'
         });
 }
- 
+
 function ToggleTV() {
     if (isTurnedOn) {
         timeline.restart();
@@ -50,13 +50,13 @@ function ToggleTV() {
             $(gamesound).animate({volume: 0.3}, 3000);
         }, 1200);
     }
- 
+
     isTurnedOn = !isTurnedOn;
 }
- 
+
 // Initialize
 $(document).ready(BuildTimeline);
- 
+
 // Bindings
 $(document).on('click', SELECTOR_SWITCHER_TV_PWR, function() {
     ToggleTV();

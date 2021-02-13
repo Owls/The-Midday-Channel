@@ -10,29 +10,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="jquery-3.5.1.min.js"></script>
     <script src="main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script src="test.js"></script>
     <title>Cathode Ray Test</title>
 </head>
 
 
 <body>
 
-    <!-- Landing Page. User will click a button, which will "turn off" the TV Effect and Redirect to main page. -->
-    <!-- NOTE: will play animation to simulate being pulled into TV? -->
-    <div class="tvborder">
+<!-- Landing Page. User will click a button, which will "turn off" the TV Effect and Redirect to main page. -->
+<!-- NOTE: will play animation to simulate being pulled into TV? -->
+<div class="tvborder">
 
-        <div class="tvscreen">
-            <div class="content"></div>
-        </div>
-
-        <div class="container">
-            <div class="powerbutton"></div>
-            <div class="volumeupbutton"></div>
-            <div class="volumedownbutton"></div>
-        </div>
+    <div class="tvscreen">
+        <div id= "ripples" class="content"></div>
     </div>
 
+    <div class="container">
+        <div class="powerbutton"></div>
+        <div class="volumeupbutton"></div>
+        <div class="volumedownbutton"></div>
+    </div>
+</div>
 
-    <a href="./bk-main.html"><button>GO TO MAIN</button></a>
+<a href="./bk-main.html"><button>GO TO MAIN</button></a>
+<!-- Ripples script -->
+<script>
+    $('#ripples').ripples({
+        resolution: 200,
+        perturbance: 0.04,
+    });
+</script>
+
 </body>
 
 </html>
