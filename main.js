@@ -1,3 +1,5 @@
+alert("Hello! Thank you for Visiting. Please turn the TV On, to continue.")
+
 var SELECTOR_SCREEN_ELEMENT = '.content';
 var SELECTOR_SWITCHER_TV_PWR = '.powerbutton';
 var SELECTOR_SWITCHER_TV_VOL_UP = ".volumeupbutton";
@@ -75,3 +77,4 @@ $(document).on("click", SELECTOR_SWITCHER_TV_VOL_DOWN, function() {
         gamesound.volume -= 0.1;
     }
 });
+

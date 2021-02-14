@@ -2,10 +2,15 @@
                      _     _                   _          _
 */
 
-body {
+body
+{
   font-family: sans-serif;
-  background-color: #111111;
+  background: url("./ASSETS/giphy.gif");
+  background-size: cover;
+  background-color: black;
+  opacity: 6;
 }
+
 
 a {
   color: #ff5f2e;
@@ -48,6 +53,7 @@ h1 {
   height: 600px;
   /* Recesses Element behind other Elements */
   z-index: 1;
+  background-color: black;
 }
 
 .content
@@ -140,16 +146,6 @@ h1 {
   text-align: center;
 }
 
-.textbox
-{
-  /*border: 2px solid lightseagreen;*/
-  background-image: url(ASSETS/earthtext.gif);
-  background-size: cover;
-  top: -10%;
-  height: 219px;
-  width: 519px;
-  background-position: center center;
-}
 
 .box
 {
@@ -377,3 +373,7 @@ h1 {
 {
   animation: textShadow 1.6s infinite;
 }
+
+/* TEST TEST TEST TEST */
+
+/* TEST TEST TEST TEST */
