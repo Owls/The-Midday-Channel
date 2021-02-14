@@ -88,6 +88,16 @@ div
     width: auto;
 }
 
+/* REMOVE LATER */
+.test
+{
+    border: 2px solid steelblue;
+    height: 30vh;
+    width: 30vw;
+
+}
+
+
 /* Nav Bar */ 
 ul
 {

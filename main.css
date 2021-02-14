@@ -30,7 +30,7 @@
   width: 740px;
   height: 600px;
   /* Recesses Element behind other Elements */
-  z-index: 2;
+  z-index: 1;
 }
 
 .content
@@ -47,14 +47,14 @@
   background: -webkit-linear-gradient(to left, #16222A, #3A6073);
   background: linear-gradient(to left, #16222A, #3A6073);
   background-size: cover;
-  background-image: url("./ASSETS/dxskybox.png");
+  background-image: url("./ASSETS/dxskyboxIV.png");
   color: #e1eef6;
   height: 100%;
   width: 100%;
   /* Adds blur to screen */
-  filter: blur(1.5px);
+  filter: blur(2px);
+  opacity: 2;
 }
-
 
 /* When Interacting with the Power Button, turns screen on */
 
@@ -128,6 +128,7 @@ h1 {
   text-align: center;
 }
 
+
 /* Using the Keyframes rule, we can specify what happens on each Frame of an Animation */
 @keyframes flicker
 {
@@ -196,7 +197,7 @@ h1 {
   }
 }
 
-/* Uses the Keyframe Rule to achieve Color Separation */
+/* Uses the Keyframe Rule to achieve Color Seperation */
 @keyframes textShadow
 {
   0% {
@@ -263,7 +264,6 @@ h1 {
     text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
   }
 }
-
 .crt::after
 {
   content: " ";
@@ -275,9 +275,10 @@ h1 {
   right: 0;
   background: rgba(18, 16, 16, 0.1);
   opacity: 0;
-  z-index: -3;
+  z-index: 4;
   pointer-events: none;
-  animation: flicker 0.15s infinite;
+  /* Setting to 0 is, ostensibly, turning the Flicker to off */
+  animation: flicker 2.7s infinite;
 }
 
 /* Uses Liner Gradients and Background Size to Simulate Flicker */
@@ -291,10 +292,11 @@ h1 {
   bottom: 0;
   right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: -3;
-  background-size: auto;
+  z-index: 4;
+  background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
-.crt {
+.crt
+{
   animation: textShadow 1.6s infinite;
 }
