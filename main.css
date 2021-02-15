@@ -5,7 +5,7 @@
 body
 {
   font-family: sans-serif;
-  background: url("./ASSETS/giphy.gif");
+  /*background: url("./ASSETS/giphy.gif");*/
   background-size: cover;
   background-color: black;
   opacity: 6;
