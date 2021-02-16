@@ -301,7 +301,7 @@ p
     z-index: 2;
     pointer-events: none;
     /* Setting to 0 is, ostensibly, turning the Flicker to off */
-    animation: flicker 0 infinite;
+    animation: flicker 0s infinite;
   }
 
   /* Uses Liner Gradients and Background Size to Simulate Flicker */

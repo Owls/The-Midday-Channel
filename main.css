@@ -70,14 +70,45 @@ h1 {
   background: -webkit-linear-gradient(to left, #16222A, #3A6073);
   background: linear-gradient(to left, #16222A, #3A6073);
   background-size: cover;
-  background-image: url("./ASSETS/dxskyboxHD.jpg");
+  background-image: url("./ASSETS/dxskyboxrd.png");
   color: #e1eef6;
   height: 100%;
   width: 100%;
   /* Adds blur to screen */
   filter: blur(2px);
   opacity: 2;
+  position: relative;
+  /*display: none;*/
 }
+
+/* Check position absolute an z-index */
+/* COPY TEMPLATE HERE */
+.boxoverlay
+{
+  position: absolute;
+  z-index: 2;
+  height: 15%;
+  width: 55%;
+  top: 35%;
+  left: 22.5%;
+  background: url("ASSETS/textbox.gif");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.splashscreen
+{
+  height: 100%;
+  width: 100%;
+  background: url("./ASSETS/saturnstart.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: none;
+  z-index: -2;
+}
+
 
 /* When Interacting with the Power Button, turns screen on */
 
@@ -374,6 +405,3 @@ h1 {
   animation: textShadow 1.6s infinite;
 }
 
-/* TEST TEST TEST TEST */
-
-/* TEST TEST TEST TEST */

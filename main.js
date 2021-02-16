@@ -77,4 +77,10 @@ $(document).on("click", SELECTOR_SWITCHER_TV_VOL_DOWN, function() {
         gamesound.volume -= 0.1;
     }
 });
+/* TEST */
+
+
+
+/* TEST */
+
 
