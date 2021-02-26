@@ -50,7 +50,7 @@ h1
 .tvscreen
 {
   margin: 65px auto;
-  border: 2px solid orange;
+  /*border: 2px solid orange;*/
   /* Centered Black Background to simulate screen being off. */
   width: 740px;
   height: 600px;
@@ -61,7 +61,7 @@ h1
 
 .content
 {
-  border: 2px solid green;
+  /*border: 2px solid green;*/
   /* Centered Black Background to simulate screen being off. */
   max-width: 740px;
   height: 600px;
@@ -117,7 +117,7 @@ h1
 
 .powerbutton
 {
-  border: 2px solid firebrick;
+  /*border: 2px solid firebrick;*/
   width: 50px;
   height: 37px;
   /* Position of Button */
@@ -130,7 +130,7 @@ h1
 /* When Interacting with the Volume Buttons, incramentally changes Volume */
 .volumeupbutton
 {
-  border: 2px solid #ec0cd1;
+  /*border: 2px solid #ec0cd1;*/
   width: 50px;
   height: 37px;
   /* Position of Button */
@@ -143,7 +143,7 @@ h1
 /* When Interacting with the Volume Buttons, incramentally changes Volume */
 .volumedownbutton
 {
-  border: 2px solid #fbff00;
+  /*border: 2px solid #fbff00;*/
   width: 50px;
   height: 37px;
   /* Position of Button */
@@ -156,7 +156,7 @@ h1
 .container
 {
   position: relative;
-  border: 2px solid blue;
+  /*border: 2px solid blue;*/
   width: 100%;
   height: 200px;
 }
