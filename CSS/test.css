@@ -20,7 +20,7 @@ body
     margin: 0;
     height: 100vh;
     background-color: black;
-    background-image: url(ASSETS/dxskybox.png); /* replace this later, dummy */
+    background-image: url(../ASSETS/dxskybox.png); /* replace this later, dummy */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body
     width: 141px;
     opacity: 3;
     border-radius: 50%;
-    background-image: url("ASSETS/original.png");
+    background-image: url("../ASSETS/original.png");
     background-position: center center;
     background-size: cover;
     background-color: mediumslateblue;
@@ -68,7 +68,7 @@ body
 .textbox
 {
     /*border: 2px solid lightseagreen;*/
-    background-image: url(ASSETS/earthtext.gif);
+    background-image: url(../ASSETS/earthtext.gif);
     background-size: cover;
     top: -10%;
     height: 219px;

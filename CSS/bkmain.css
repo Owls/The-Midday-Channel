@@ -57,7 +57,7 @@ div
     position: relative;
     left: center;
     top: 338px;
-    background: url("ASSETS/jiggy.gif");
+    background: url("../ASSETS/jiggy.gif");
     background-size: 96%;
     background-repeat: no-repeat;
     z-index: 2;
@@ -67,7 +67,7 @@ div
 {
     /* Define Image */
     border: 2px solid green;
-    background-image: url("./title.png");
+    background-image: url("../ASSETS/title.png");
     min-height: 400px;
     /* Center and Scale the Image */
     background-position: center;
