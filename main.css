@@ -188,7 +188,7 @@ h1
   width: 20px;
   opacity: 3;
   border-radius: 50%;
-  background-image: url("../ASSETS/original.png");
+  background-image: url("ASSETS/original.png");
   background-position: center center;
   background-size: cover;
   background-color: mediumslateblue;
@@ -201,7 +201,7 @@ h1
   transition: 0.2s ease;
 }
 
-
+/* This functionality is currently unused */
 @keyframes stupidity
 {
   0%
