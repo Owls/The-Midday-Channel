@@ -26,6 +26,28 @@ body
     background-repeat: no-repeat;
 }
 
+canvas
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#test
+{
+    font-family: 'Hachi Maru Pop', cursive;
+    background: -webkit-linear-gradient(#6F36AD, #1F5CEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*border: 5px solid crimson;*/
+    position: absolute;
+    top: 620px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display:block;
+}
+
 /* Applies animation to the text in our header. */
 .animate__animated .animate__jackInTheBox
 {
