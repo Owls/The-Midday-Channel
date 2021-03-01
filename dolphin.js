@@ -123,7 +123,7 @@ const skyboxMaterials = new THREE.MeshFaceMaterial(skyMaterials);
 const skyCube = new THREE.Mesh(skyBox, skyboxMaterials);
 scene.add(skyCube);
 
-camera.position.z = 5;
+camera.position.set(1, 1, 3);
 /*
 In order to move the cube, we need to set up an animation loop.
 Basically, this creates a loop where the renderer draws the scene every time the screen is refreshed (generally, 60x a second for most screens). requestAnimationFrame gives us several distinct advantages over setInterval, though most importantly -
