@@ -49,7 +49,6 @@ audioLoader.load( 'ASSETS/Prism.mp3', function( buffer ) {
     sound.play();
 });
 
-
 /*
 Makes a ground plane.
 We start by loading our texture, set it to repeating, set the filter to nearest, and then set it to how many times we'd like it to repeat.
@@ -104,6 +103,25 @@ const material = new THREE.MeshFaceMaterial( cubeMaterials ); // Call our array 
 const cube = new THREE.Mesh(geometry, material);
 cube.position.set(0.9, 0.9, 0.9); // Spawn point
 scene.add(cube);
+
+
+/*
+This is identical to the previous segment in most aspects, except the cube is much larger. Alternatively, instead of using THREE.DoubleSide, you could use THREE.BackSide, which would texture the inside of the cube.
+ */
+const skyBox = new THREE.BoxGeometry(20, 20, 20);
+const skyMaterials =
+    [
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Right Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Left Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Top Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Bottom Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Front Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } )  // Back Side
+    ];
+
+const skyboxMaterials = new THREE.MeshFaceMaterial(skyMaterials);
+const skyCube = new THREE.Mesh(skyBox, skyboxMaterials);
+scene.add(skyCube);
 
 camera.position.z = 5;
 /*
