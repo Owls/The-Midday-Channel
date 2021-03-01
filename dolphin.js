@@ -11,8 +11,8 @@ Finally, we need to define our near and far clipping plane. This means that any 
 */
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-spotLight = new THREE.SpotLight(0x9e9ebb, 3);
-spotLight.position.set( 1000, 1000, 1000 );
+spotLight = new THREE.SpotLight(0x433939, 1.5);
+spotLight.position.set( 10000, 10000, 10000 );
 scene.add(spotLight);
 
 /*
@@ -111,12 +111,12 @@ This is identical to the previous segment in most aspects, except the cube is mu
 const skyBox = new THREE.BoxGeometry(20, 20, 20);
 const skyMaterials =
     [
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Right Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Left Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Top Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Bottom Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } ), // Front Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skyorig.png'), side: THREE.DoubleSide } )  // Back Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/1.png'), side: THREE.DoubleSide } ), // Right Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/2.png'), side: THREE.DoubleSide } ), // Left Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/3.png'), side: THREE.DoubleSide } ), // Top Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/4.png'), side: THREE.DoubleSide } ), // Bottom Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/5.png'), side: THREE.DoubleSide } ), // Front Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/6.png'), side: THREE.DoubleSide } )  // Back Side
     ];
 
 const skyboxMaterials = new THREE.MeshFaceMaterial(skyMaterials);
