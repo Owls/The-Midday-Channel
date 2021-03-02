@@ -9,11 +9,11 @@ var isTurnedOn = false;
 
 var timeline;
 
-const gamesound = new Audio("ASSETS/sscreenII.mp3");
+const gamesound = new Audio("../ASSETS/sscreenII.mp3");
 gamesound.loop = false
 gamesound.volume = 0.0;
 
-const poweronsound = new Audio("ASSETS/turnon.mp3");
+const poweronsound = new Audio("../ASSETS/turnon.mp3");
 poweronsound.volume = 0.3;
 
 function BuildTimeline() {

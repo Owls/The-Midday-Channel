@@ -39,7 +39,7 @@ h1
   border: 2px solid black;
   padding: 25px;
   margin: auto;
-  background: url("ASSETS/crt-frameiii.png");
+  background: url("../ASSETS/crt-frameiii.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -73,7 +73,7 @@ h1
   background: -webkit-linear-gradient(to left, #16222A, #3A6073);
   background: linear-gradient(to left, #16222A, #3A6073);
   background-size: cover;
-  background-image: url("ASSETS/dxskyboxrd.png");
+  background-image: url("../ASSETS/dxskyboxrd.png");
   color: #e1eef6;
   height: 100%;
   width: 100%;
@@ -94,7 +94,7 @@ h1
   width: 55%;
   top: 35%;
   left: 22.5%;
-  background: url("ASSETS/textbox.gif");
+  background: url("../ASSETS/textbox.gif");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -104,7 +104,7 @@ h1
 {
   height: 100%;
   width: 100%;
-  background: url("ASSETS/saturnstart.gif");
+  background: url("../ASSETS/saturnstart.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -188,7 +188,7 @@ h1
   width: 20px;
   opacity: 3;
   border-radius: 50%;
-  background-image: url("ASSETS/original.png");
+  background-image: url("../ASSETS/disdain.png");
   background-position: center center;
   background-size: cover;
   background-color: mediumslateblue;

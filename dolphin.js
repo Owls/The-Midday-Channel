@@ -10,7 +10,7 @@ Seems to need to be declared directly after the scene.
 const fogColor = new THREE.Color(0xc9aee3);
 
 scene.background = fogColor;
-scene.fog = new THREE.Fog(fogColor, 0.0005, 18);
+scene.fog = new THREE.Fog(fogColor, 0.00225, 10);
 
 /*
 This will set up our scene, our camera, and our WebGL Renderer. It's important to note that there are actually several camera types, however, for now we're using Perspective Camera.
@@ -52,7 +52,7 @@ const sound = new THREE.Audio( listener );
 
 
 const audioLoader = new THREE.AudioLoader();
-audioLoader.load( 'ASSETS/Prism.mp3', function( buffer ) {
+audioLoader.load( 'ASSETS/whale.mp3', function( buffer ) {
     sound.setBuffer( buffer );
     sound.setLoop( true );
     sound.setVolume( 0.5 );
@@ -109,6 +109,7 @@ const cubeMaterials =
         new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/GameCube/gcfront.png'), side: THREE.DoubleSide } ), // Front Side
         new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/GameCube/gcback.png'), side: THREE.DoubleSide } ),  // Back Side
     ];
+
 const material = new THREE.MeshFaceMaterial( cubeMaterials ); // Call our array of textures to apply to the cube.
 const cube = new THREE.Mesh(geometry, material);
 cube.position.set(0.9, 0.9, 0.9); // Spawn point

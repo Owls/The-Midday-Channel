@@ -110,7 +110,7 @@ const assets = [
 
 	//
 
-	'./css/main.css',
+	'./css/midday.css',
 
 	'./js/EditorControls.js',
 	'./js/Storage.js',

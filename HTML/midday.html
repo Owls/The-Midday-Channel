@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to CSS -->
+    <link rel="stylesheet" href="../CSS/midday.css">
+    <!-- Link to Jacascript -->
+    <script src="../JS/midday.js" defer></script>
+    <script src="../JS/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <title>The Eye of the Mind</title>
+</head>
+
+
+<body>
+
+<div class="tvborder">
+
+    <div class="tvscreen">
+        <div id= "ripples" class="content">
+            <div class="boxoverlay"></div>
+        </div>
+<!--        <div class="splashscreen"></div>-->
+    </div>
+
+    <div class="container">
+        <div class="powerbutton"></div>
+        <div class="volumeupbutton"></div>
+        <div class="volumedownbutton"></div>
+    </div>
+</div>
+
+<a href="bk-main.html"><button>GO TO MAIN</button></a>
+<!-- Ripples script -->
+<script>
+    $('#ripples').ripples({
+        resolution: 200,
+        perturbance: 0.04,
+    });
+</script>
+
+</body>
+
+</html>
