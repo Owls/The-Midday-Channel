@@ -3,6 +3,16 @@
 const scene = new THREE.Scene();
 
 /*
+Here we add fog to our scene. This can be done in one of two ways - liner fog or FogExp2, which is a bit harder to use.
+Put simply, we are adding the fog to our scene, defining its color, and the distance at which it renders.
+Seems to need to be declared directly after the scene.
+ */
+const fogColor = new THREE.Color(0xc9aee3);
+
+scene.background = fogColor;
+scene.fog = new THREE.Fog(fogColor, 0.0005, 18);
+
+/*
 This will set up our scene, our camera, and our WebGL Renderer. It's important to note that there are actually several camera types, however, for now we're using Perspective Camera.
 The layout of Perspective Camera is as follows: ex: PerspectiveCamera(fov, aspect, near, far).
 After defining the type of our camera, we need to define our FOV - ex: PerspectiveCamera(fov, aspect, near, far). This value is written in degrees, and controls the extent of the screen shown by the camera at any given moment.
