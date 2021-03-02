@@ -52,7 +52,7 @@ const sound = new THREE.Audio( listener );
 
 
 const audioLoader = new THREE.AudioLoader();
-audioLoader.load( 'ASSETS/whale.mp3', function( buffer ) {
+audioLoader.load( '../ASSETS/whale.mp3', function( buffer ) {
     sound.setBuffer( buffer );
     sound.setLoop( true );
     sound.setVolume( 0.5 );
@@ -66,7 +66,7 @@ In this instance we're using a 2X2 checkerboard pattern. By repeating and settin
  */
 const planeSize = 40;
 const loader = new THREE.TextureLoader();
-const texture = loader.load('ASSETS/checker.png');
+const texture = loader.load('../ASSETS/checker.png');
 texture.wrapS = THREE.RepeatWrapping;
 texture.wrapT = THREE.RepeatWrapping;
 texture.magFilter = THREE.NearestFilter;
@@ -122,12 +122,12 @@ This is identical to the previous segment in most aspects, except the cube is mu
 const skyBox = new THREE.BoxGeometry(20, 20, 20);
 const skyMaterials =
     [
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/1.png'), side: THREE.DoubleSide } ), // Right Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/2.png'), side: THREE.DoubleSide } ), // Left Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/3.png'), side: THREE.DoubleSide } ), // Top Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/4.png'), side: THREE.DoubleSide } ), // Bottom Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/5.png'), side: THREE.DoubleSide } ), // Front Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/skybox/skybox1/6.png'), side: THREE.DoubleSide } )  // Back Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/skybox/skybox1/1.png'), side: THREE.DoubleSide } ), // Right Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/skybox/skybox1/2.png'), side: THREE.DoubleSide } ), // Left Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/skybox/skybox1/3.png'), side: THREE.DoubleSide } ), // Top Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/skybox/skybox1/4.png'), side: THREE.DoubleSide } ), // Bottom Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/skybox/skybox1/5.png'), side: THREE.DoubleSide } ), // Front Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/skybox/skybox1/6.png'), side: THREE.DoubleSide } )  // Back Side
     ];
 
 const skyboxMaterials = new THREE.MeshFaceMaterial(skyMaterials);
