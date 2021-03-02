@@ -434,7 +434,7 @@ function MenubarFile( editor ) {
 		} );
 
 		var loader = new THREE.FileLoader( manager );
-		loader.load( 'js/libs/app/index.html', function ( content ) {
+		loader.load( 'js/libs/app/midday.html', function ( content ) {
 
 			content = content.replace( '<!-- title -->', title );
 
