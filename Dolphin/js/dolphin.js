@@ -102,12 +102,12 @@ Here, we use cubeMaterials to create an array where we can define the texture fo
  */
 const cubeMaterials =
     [
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/GameCube/gcright.png'), side: THREE.DoubleSide } ), // Right Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/GameCube/gcleft.png'), side: THREE.DoubleSide } ), // Left Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/GameCube/gctop.png'), side: THREE.DoubleSide } ), // Top Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/GameCube/gcbottom.png'), side: THREE.DoubleSide } ), // Bottom Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/GameCube/gcfront.png'), side: THREE.DoubleSide } ), // Front Side
-        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('ASSETS/GameCube/gcback.png'), side: THREE.DoubleSide } ),  // Back Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/GameCube/gcright.png'), side: THREE.DoubleSide } ), // Right Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/GameCube/gcleft.png'), side: THREE.DoubleSide } ), // Left Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/GameCube/gctop.png'), side: THREE.DoubleSide } ), // Top Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/GameCube/gcbottom.png'), side: THREE.DoubleSide } ), // Bottom Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/GameCube/gcfront.png'), side: THREE.DoubleSide } ), // Front Side
+        new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load('../ASSETS/GameCube/gcback.png'), side: THREE.DoubleSide } ),  // Back Side
     ];
 
 const material = new THREE.MeshFaceMaterial( cubeMaterials ); // Call our array of textures to apply to the cube.
