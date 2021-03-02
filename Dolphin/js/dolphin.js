@@ -52,7 +52,8 @@ const sound = new THREE.Audio( listener );
 
 
 const audioLoader = new THREE.AudioLoader();
-audioLoader.load( 'snd/whale.mp3', function( buffer ) {
+audioLoader.load( '../ASSETS/whale.mp3', function( buffer )
+{
     sound.setBuffer( buffer );
     sound.setLoop( true );
     sound.setVolume( 0.5 );
