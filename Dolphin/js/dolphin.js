@@ -1,4 +1,5 @@
 /* What are we doing here? */
+
 /* Creates our scene. */
 const scene = new THREE.Scene();
 
@@ -51,14 +52,14 @@ camera.add( listener );
 const sound = new THREE.Audio( listener );
 
 
-const audioLoader = new THREE.AudioLoader();
-audioLoader.load( '../ASSETS/whale.mp3', function( buffer )
-{
-    sound.setBuffer( buffer );
-    sound.setLoop( true );
-    sound.setVolume( 0.5 );
-    sound.play();
-});
+// const audioLoader = new THREE.AudioLoader();
+// audioLoader.load( '../ASSETS/whale.mp3', function( buffer )
+// {
+//     sound.setBuffer( buffer );
+//     sound.setLoop( true );
+//     sound.setVolume( 0.5 );
+//     sound.play();
+// });
 
 /*
 Makes a ground plane.
