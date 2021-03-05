@@ -41,7 +41,7 @@ body
 .main h1
 {
     font-family: 'EB Garamond', serif;
-    background: -webkit-linear-gradient(#CF1950  , #D02844);
+    background: -webkit-linear-gradient(#6A33CB    , #471D92);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -57,8 +57,8 @@ body
 .btn
 {
     display: inline-block;
-    background: #196F3D;
-    color: #2e2e2e;
+    background: #471D92;
+    color: #b0b0b0;
     text-decoration: none;
     border: none;
     border-radius: 5px;
