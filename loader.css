@@ -37,8 +37,29 @@
 
 @keyframes grow
 {
+    0%
+    {
+        background-color: #C70039;
+    }
+
+    25%
+    {
+        background-color: #090979;
+    }
+
     50%
     {
         transform: scale(1);
+        background-color: #3f5efb;
+    }
+
+    75%
+    {
+        background-color: #3f5efb;
+    }
+
+    100%
+    {
+        background-color: mediumslateblue;
     }
 }
