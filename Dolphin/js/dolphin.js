@@ -22,8 +22,8 @@ Finally, we need to define our near and far clipping plane. This means that any 
 */
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-spotLight = new THREE.SpotLight(0x433939, 1.5);
-spotLight.position.set( 10000, 10000, 10000 );
+spotLight = new THREE.SpotLight(0x433939, 1.5); // Defines color and intensity of color,
+spotLight.position.set( 100, 100, 100);
 scene.add(spotLight);
 
 /*

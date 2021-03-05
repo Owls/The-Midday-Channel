@@ -1,0 +1,44 @@
+/* Wrapper */
+.loader
+{
+    height: 50px;
+    /* Rotates loading balls in circle - linear allows us to play at the same speed the whole time. */
+    animation: rotate 3s linear infinite;
+}
+
+.circle
+{
+    display: inline-block;
+    background: #82ACDC;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: -10px;
+
+    transform: scale(0);
+    animation: grow 1s linear infinite;
+}
+
+/* Matches every element that is the nth child */
+.circle:nth-child(2)
+{
+    background: #C70039;
+    animation-delay: 0.189s;
+}
+
+@keyframes rotate
+{
+    to
+    {
+        /* Applies 2d rotation */
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow
+{
+    50%
+    {
+        transform: scale(1);
+    }
+}

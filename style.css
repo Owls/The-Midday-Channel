@@ -1,0 +1,82 @@
+/*
+Imports our font to be used later.
+ */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-image: linear-gradient(135deg, #8e9eab 0%, #eef2f3 100%);
+
+    /* Starts Flexibility. */
+    display: flex;
+    /* Cross Axis - Y */
+    align-items: center;
+    /* Main Axis - X */
+    justify-content: center;
+    /* Determines Axis Position */
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+.main
+{
+    text-align: center;
+    width: 90%;
+    opacity: 0;
+    display: none;
+    transition: opacity 2s ease-in;
+}
+
+.main h1
+{
+    font-family: 'EB Garamond', serif;
+    background: -webkit-linear-gradient(#CF1950  , #D02844);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.main p
+{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    color: #333333;
+}
+
+.btn
+{
+    display: inline-block;
+    background: #196F3D;
+    color: #2e2e2e;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 25px 55px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn.hover
+{
+    opacity: 0.9;
+}
+
+.btn:active
+{
+    background: #C70039  ;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
