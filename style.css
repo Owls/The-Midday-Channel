@@ -57,7 +57,7 @@ body
 .btn
 {
     display: inline-block;
-    background: #471D92;
+    background: #6A33CB;
     color: #b0b0b0;
     text-decoration: none;
     border: none;
@@ -74,7 +74,7 @@ body
 
 .btn:active
 {
-    background: #C70039  ;
+    background: #C8703D;
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
     box-shadow: inset 0px 0px 5px #c1c1c1;
