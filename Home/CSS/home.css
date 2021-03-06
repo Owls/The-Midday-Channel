@@ -3,7 +3,11 @@ body, html
     height: 100%;
     margin: 0;
     background: #2D1542;
+}
 
+.container
+{
+display: flex;
 }
 
 p
@@ -19,13 +23,14 @@ p
     border-radius: 0;
     width: 100%;
     background-image: linear-gradient(135deg, #42275a 0%, #2D1542 75%);
+    color: #F1C40F;
     opacity: 0.9;
 }
 
 .topnav a
 {
     float: left;
-    color: #f2f2f2;
+    color: #F1C40F;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -76,7 +81,7 @@ p
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #F1C40F;
 }
 
 .hero-text button {
@@ -85,9 +90,10 @@ p
     display: inline-block;
     padding: 10px 25px;
     color: black;
-    background-color: #ddd;
+    background-color: #F1C40F;
     text-align: center;
     cursor: pointer;
+
 }
 
 .hero-text button:hover {
