@@ -2,17 +2,24 @@ body, html
 {
     height: 100%;
     margin: 0;
-    background: #2D1542;
+    background-image: linear-gradient(135deg, #232526 0%, #414345 100%);
 }
 
-.container
-{
-display: flex;
-}
 
 p
 {
     font-family: 'Gamja Flower', cursive;
+}
+
+u
+{
+    border-bottom:3px solid #F1C40F;
+
+}
+
+.container
+{
+    display: flex;
 }
 
 
@@ -22,7 +29,7 @@ p
     overflow: hidden;
     border-radius: 0;
     width: 100%;
-    background-image: linear-gradient(135deg, #42275a 0%, #2D1542 75%);
+    background-image: linear-gradient(135deg, #A90B0B 0%, #7a2828 100%);
     color: #F1C40F;
     opacity: 0.9;
 }
@@ -49,9 +56,20 @@ p
     color: #333;
 }
 
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky
-{
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -66,12 +84,13 @@ p
 .hero-image
 {
     font-family: 'Sedgwick Ave', cursive;
-    background: linear-gradient(135deg, #674faa 0%, #2b46d1 85%, #2542df 100%);
-    height: 30%;
+    background: url("https://pbs.twimg.com/media/C1s7WjlXcAAzxIk.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 }
 
 .hero-text
@@ -84,7 +103,8 @@ p
     color: #F1C40F;
 }
 
-.hero-text button {
+.hero-text button
+{
     border: none;
     outline: 0;
     display: inline-block;
@@ -96,8 +116,19 @@ p
 
 }
 
-.hero-text button:hover {
+.hero-text button:hover
+{
     background-color: #555;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
 

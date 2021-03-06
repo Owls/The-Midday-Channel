@@ -15,7 +15,7 @@ body
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    background-image: linear-gradient(135deg, #6441A5 0%, #2a0845 100%);
+    background-image: linear-gradient(135deg, #005c97 0%, #363795 100%);
 
     /* Starts Flexibility. */
     display: flex;
@@ -57,7 +57,7 @@ body
 .btn
 {
     display: inline-block;
-    background: #6A33CB;
+    background-image: linear-gradient(135deg, #a73737 0%, #7a2828 100%);
     color: #b0b0b0;
     text-decoration: none;
     border: none;
