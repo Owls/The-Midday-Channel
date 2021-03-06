@@ -6,20 +6,87 @@ body, html
 }
 
 
-p
+h1
 {
     font-family: 'Gamja Flower', cursive;
+    color: #C70039 ;
 }
 
 u
 {
-    border-bottom:3px solid #F1C40F;
-
+    border-bottom: 3px solid #F1C40F;
 }
 
-.container
+p
+{
+    color: #C70039;
+}
+
+.scroll
+{
+    color: #C70039;
+    height: 20px;
+}
+
+.testboxII
+{
+    background: url("https://i.pinimg.com/originals/01/fa/dd/01fadd999eb6be793d8bf84d996bba06.jpg");
+    font-family: 'EB Garamond', serif;
+    height: 75px;
+    width: 140px;
+    border-radius: 5px;
+    justify-content: space-around;
+
+    padding: 5px;
+    margin: 5px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #C70039!important;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+
+    z-index: 5;
+}
+
+testboxII:hover
+{
+
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+
+
+.testbox
+{
+    font-family: 'EB Garamond', serif;
+    top: 20px;
+    left: 20px;
+    height: 500px;
+    width: 500px;
+    border-radius: 25px;
+    border: 2px solid crimson;
+    background-image: linear-gradient(135deg, #42275a 0%, #734b6d 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F1C40F;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flexcontainer
 {
     display: flex;
+    justify-content: space-around;
 }
 
 
@@ -84,13 +151,15 @@ u
 .hero-image
 {
     font-family: 'Sedgwick Ave', cursive;
-    background: url("https://pbs.twimg.com/media/C1s7WjlXcAAzxIk.jpg");
+    background: url("https://static01.nyt.com/newsgraphics/2020/07/13/zoomy-hokusai/assets/images/hokusai-trimmed-4000.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-text
@@ -100,7 +169,7 @@ u
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #F1C40F;
+    color: #C70039;
 }
 
 .hero-text button
@@ -124,8 +193,34 @@ u
 
 
 
+.arrow
+{
+    text-align: center;
+    margin: 8% 0;
+}
 
+.bounce
+{
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
 
+@keyframes bounce
+{
+    0%, 20%, 50%, 80%, 100%
+    {
+        transform: translateY(0);
+    }
+    40%
+    {
+        transform: translateY(-30px);
+    }
+    60%
+    {
+        transform: translateY(-15px);
+    }
+}
 
 
 
